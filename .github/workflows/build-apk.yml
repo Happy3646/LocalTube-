@@ -36,7 +36,9 @@ jobs:
           fi
 
       - name: Build APK with Gradle
-        run: ./gradlew assembleDebug --no-daemon
+        env:
+          JAVA_OPTS: "-Djava.awt.headless=true"
+        run: ./gradlew assembleDebug --no-daemon -Dksp.useKSP2=true
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
