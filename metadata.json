@@ -1,0 +1,6 @@
+{
+  "name": "LocalTube",
+  "description": "Power-user offline video player for local media with YouTube-style watch stage, channels, playlists, and tagging.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
